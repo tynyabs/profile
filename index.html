@@ -3,169 +3,334 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tinotenda Nyabereka | Portfolio</title>
+  <title>Tinotenda Nyabereka | Software Engineer</title>
+  <meta name="description" content="Portfolio of Tinotenda Nyabereka — Software Engineer building resilient Java &amp; Spring backend systems, offline-first JavaFX applications, and scalable Microsoft Azure cloud infrastructure.">
+  <meta property="og:title" content="Tinotenda Nyabereka | Software Engineer">
+  <meta property="og:description" content="Building resilient Java backend systems, offline-first applications, and scalable cloud infrastructure.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="tinotenda.jpg">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23009dff'/%3E%3Cstop offset='100%25' stop-color='%23ff00ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='18' fill='%230d0f14'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui,sans-serif' font-weight='700' font-size='26' fill='url(%23g)'%3ETN%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 
-<header class="header">
+<div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+<header class="header" id="header">
   <a href="#home" class="logo"><span>Tinotenda Nyabereka</span></a>
 
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#experience">Services</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#home" data-section="home">Home</a></li>
+    <li><a href="#experience" data-section="experience">Services</a></li>
+    <li><a href="#stack" data-section="stack">Stack</a></li>
+    <li><a href="#projects" data-section="projects">Projects</a></li>
+    <li><a href="#contact" data-section="contact">Contact</a></li>
   </ul>
 
-  <i id="menu-icon" class="fa-solid fa-bars" role="button" aria-label="Toggle menu" aria-expanded="false"></i>
-
-  <a href="https://github.com/tynyabs" target="_blank" rel="noopener noreferrer" class="visit-btn">Visit GitHub</a>
+  <div class="header-actions">
+    <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <i class="fa-solid fa-moon" aria-hidden="true"></i>
+    </button>
+    <a href="https://github.com/tynyabs" target="_blank" rel="noopener noreferrer" class="visit-btn">Visit GitHub</a>
+    <i id="menu-icon" class="fa-solid fa-bars" role="button" tabindex="0" aria-label="Toggle menu" aria-expanded="false"></i>
+  </div>
 </header>
 
-<section class="about" id="home">
-  <div class="about-container">
-    <img src="tinotenda.jpg" alt="Portrait of Tinotenda Nyabereka">
-    <div class="info-box">
+<main>
+  <section class="about" id="home">
+    <div class="about-container">
+      <div class="portrait-frame reveal">
+        <img src="tinotenda.jpg" alt="Portrait of Tinotenda Nyabereka">
+      </div>
+      <div class="info-box reveal">
 
-      <div class="text">
-        <h3>Hi, I'm</h3>
-        <h1>Tinotenda Nyabereka</h1>
-        <span class="role-title">Software Engineer</span>
-        <p class="hero-desc">Building resilient Java backend systems, offline-first applications, and scalable cloud infrastructure.</p>
+        <div class="text">
+          <h3>Hi, I'm</h3>
+          <h1>Tinotenda Nyabereka</h1>
+          <span class="role-title">Software Engineer</span>
+          <p class="hero-desc">Building resilient Java backend systems, offline-first applications, and scalable cloud infrastructure.</p>
+        </div>
+
+        <div class="hero-highlights">
+          <div class="highlight-item">
+            <strong>5+ Years</strong>
+            <span>Backend &amp; Systems</span>
+          </div>
+          <div class="highlight-divider" aria-hidden="true"></div>
+          <div class="highlight-item">
+            <strong>Offline-First</strong>
+            <span>JavaFX &amp; Local Sync</span>
+          </div>
+          <div class="highlight-divider" aria-hidden="true"></div>
+          <div class="highlight-item">
+            <strong>Azure Cloud</strong>
+            <span>DevOps &amp; Security</span>
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <a href="assets/Tinotenda_Nyabereka_CV.pdf" download="Tinotenda_Nyabereka_CV.pdf" class="btn btn-primary">
+            <i class="fa-solid fa-download" aria-hidden="true"></i> Download CV
+          </a>
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+
+        <div class="socials">
+          <a href="https://github.com/tynyabs" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/tinotenda-nyabereka-938569213/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="experience" id="experience">
+    <h2 class="section-title reveal">Services</h2>
+    <div class="experience-info">
+      <div class="grid">
+
+        <div class="grid-card reveal">
+          <i class="fa-solid fa-code"></i>
+          <span class="grid-card-title">Backend Engineering</span>
+          <h3 class="grid-card-subtitle">5 Years</h3>
+          <p>Designing robust microservices, high-performance APIs, and secure financial integrations using modern Spring ecosystems.</p>
+        </div>
+
+        <div class="grid-card reveal">
+          <i class="fa-solid fa-gears"></i>
+          <span class="grid-card-title">System Design</span>
+          <h3 class="grid-card-subtitle">Architecture</h3>
+          <p>Structuring scalable distributed systems, localized data persistence layers, and fault-tolerant transaction processing workflows.</p>
+        </div>
+
+        <div class="grid-card reveal">
+          <i class="fa-brands fa-jenkins"></i>
+          <span class="grid-card-title">DevOps</span>
+          <h3 class="grid-card-subtitle">Cloud &amp; Containers</h3>
+          <p>Automating infrastructure deployments, managing cloud environments on Microsoft Azure, and configuring secure server hardening.</p>
+        </div>
+
+        <div class="grid-card reveal">
+          <i class="fa-brands fa-css3-alt"></i>
+          <span class="grid-card-title">Frontend</span>
+          <h3 class="grid-card-subtitle">UI Development</h3>
+          <p>Building responsive, modern web interfaces, interactive components, and clean client-side layout structures.</p>
+        </div>
+
+        <div class="grid-card reveal">
+          <i class="fa-solid fa-desktop"></i>
+          <span class="grid-card-title">Desktop Applications</span>
+          <h3 class="grid-card-subtitle">JavaFX</h3>
+          <p>Building reliable desktop applications such as point-of-sale systems with responsive UIs and resilient local storage.</p>
+        </div>
+
+        <div class="grid-card reveal">
+          <i class="fa-solid fa-bug"></i>
+          <span class="grid-card-title">QA &amp; Testing</span>
+          <h3 class="grid-card-subtitle">Quality Assurance</h3>
+          <p>Testing payment and fiscal workflows end to end so releases ship correct, compliant, and stable.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="stack" id="stack">
+    <h2 class="section-title reveal">Tech Stack</h2>
+    <div class="stack-grid">
+
+      <div class="stack-card reveal">
+        <div class="stack-card-header">
+          <i class="fa-solid fa-server"></i>
+          <h3>Backend &amp; APIs</h3>
+        </div>
+        <ul class="stack-list">
+          <li>Java</li>
+          <li>Spring Boot</li>
+          <li>Spring Security</li>
+          <li>RESTful APIs</li>
+          <li>Microservices</li>
+          <li>Fiscal &amp; Payment Integrations</li>
+        </ul>
       </div>
 
-      <div class="btn-group">
-        <a href="assets/Tinotenda_Nyabereka_CV.pdf" download="Tinotenda_Nyabereka_CV.pdf" class="btn">Download CV</a>
-        <a href="#contact" class="btn">Contact Me</a>
+      <div class="stack-card reveal">
+        <div class="stack-card-header">
+          <i class="fa-solid fa-database"></i>
+          <h3>Desktop &amp; Data</h3>
+        </div>
+        <ul class="stack-list">
+          <li>JavaFX</li>
+          <li>SQLite (Power-Safe Persistence)</li>
+          <li>PostgreSQL</li>
+          <li>MySQL</li>
+          <li>Hibernate / JPA</li>
+          <li>Offline-First Sync</li>
+        </ul>
       </div>
 
-      <div class="socials">
-        <a href="https://github.com/tynyabs" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/tinotenda-nyabereka-938569213/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
+      <div class="stack-card reveal">
+        <div class="stack-card-header">
+          <i class="fa-solid fa-cloud"></i>
+          <h3>Cloud &amp; DevOps</h3>
+        </div>
+        <ul class="stack-list">
+          <li>Microsoft Azure</li>
+          <li>Docker &amp; Containers</li>
+          <li>Linux Hardening</li>
+          <li>NSG &amp; Firewall Rules</li>
+          <li>Nginx &amp; SSL/TLS</li>
+          <li>Jenkins / CI-CD</li>
+        </ul>
+      </div>
+
+      <div class="stack-card reveal">
+        <div class="stack-card-header">
+          <i class="fa-solid fa-laptop-code"></i>
+          <h3>Frontend &amp; QA</h3>
+        </div>
+        <ul class="stack-list">
+          <li>HTML5 &amp; CSS3</li>
+          <li>JavaScript</li>
+          <li>Responsive Design</li>
+          <li>End-to-End Workflow Testing</li>
+          <li>API Verification</li>
+          <li>Git &amp; GitHub</li>
+        </ul>
       </div>
 
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="experience" id="experience">
-  <h2 class="section-title">Services</h2>
-  <div class="experience-info">
-    <div class="grid">
+  <section class="projects" id="projects">
+    <h2 class="section-title reveal">Recent Projects</h2>
 
-      <div class="grid-card">
-        <i class="fa-solid fa-code"></i>
-        <span class="grid-card-title">Backend Engineering</span>
-        <h3 class="grid-card-subtitle">5 Years</h3>
-        <p>Designing robust microservices, high-performance APIs, and secure financial integrations using modern Spring ecosystems.</p>
-      </div>
+    <div class="projects-grid">
 
-      <div class="grid-card">
-        <i class="fa-solid fa-gears"></i>
-        <span class="grid-card-title">System Design</span>
-        <h3 class="grid-card-subtitle">Architecture</h3>
-        <p>Structuring scalable distributed systems, localized data persistence layers, and fault-tolerant transaction processing workflows.</p>
-      </div>
+      <article class="projects-card reveal" data-project="pos">
+        <img src="project1.png" alt="Desktop Offline-First POS Machine">
+        <div class="projects-card-info">
+          <span class="project-tag">JavaFX · SQLite · Cloud Sync</span>
+          <h3>Offline-First Desktop POS</h3>
+          <p>Resilient point-of-sale system featuring power-safe local storage and automated cloud sync.</p>
+          <div class="project-actions">
+            <button type="button" class="project-detail-btn" data-project="pos">
+              Architecture &amp; Details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </article>
 
-      <div class="grid-card">
-        <i class="fa-brands fa-jenkins"></i>
-        <span class="grid-card-title">DevOps</span>
-        <h3 class="grid-card-subtitle">Cloud &amp; Containers</h3>
-        <p>Automating infrastructure deployments, managing cloud environments on Microsoft Azure, and configuring secure server hardening.</p>
-      </div>
+      <article class="projects-card reveal" data-project="pharmacy">
+        <img src="project2.png" alt="No. 1 Pharmacy Website">
+        <div class="projects-card-info">
+          <span class="project-tag">HTML5 · CSS3 · Responsive UI</span>
+          <h3>Responsive Web Design</h3>
+          <p>Modern, accessible websites engineered for speed and cross-device fluidity, including <a href="https://no1pharmacy.co.zw/about" target="_blank" rel="noopener noreferrer" class="inline-project-link">No. 1 Pharmacy</a>.</p>
+          <div class="project-actions">
+            <a href="https://no1pharmacy.co.zw/about" target="_blank" rel="noopener noreferrer" class="project-ext-link">
+              Visit Live Site <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
+            <button type="button" class="project-detail-btn" data-project="pharmacy">
+              Details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </article>
 
-      <div class="grid-card">
-        <i class="fa-brands fa-css3-alt"></i>
-        <span class="grid-card-title">Frontend</span>
-        <h3 class="grid-card-subtitle">UI Development</h3>
-        <p>Building responsive, modern web interfaces, interactive components, and clean client-side layout structures.</p>
-      </div>
-
-      <div class="grid-card">
-        <i class="fa-solid fa-desktop"></i>
-        <span class="grid-card-title">Desktop Applications</span>
-        <h3 class="grid-card-subtitle">JavaFX</h3>
-        <p>Building reliable desktop applications such as point-of-sale systems with responsive UIs and resilient local storage.</p>
-      </div>
-
-      <div class="grid-card">
-        <i class="fa-solid fa-bug"></i>
-        <span class="grid-card-title">QA &amp; Testing</span>
-        <h3 class="grid-card-subtitle">Quality Assurance</h3>
-        <p>Testing payment and fiscal workflows end to end so releases ship correct, compliant, and stable.</p>
-      </div>
+      <article class="projects-card reveal" data-project="azure">
+        <img src="project3.png" alt="Azure Cloud Infrastructure Management">
+        <div class="projects-card-info">
+          <span class="project-tag">Microsoft Azure · NSG · TLS</span>
+          <h3>Azure Cloud Management</h3>
+          <p>Multi-environment VM orchestration, NSG firewall hardening, and automated SSL/TLS pipelines.</p>
+          <div class="project-actions">
+            <button type="button" class="project-detail-btn" data-project="azure">
+              Architecture &amp; Details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </article>
 
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="projects" id="projects">
-  <h2 class="section-title">Recent Projects</h2>
+  <section class="contact" id="contact">
+    <h2 class="section-title reveal">Contact Me</h2>
 
-  <div class="projects-grid">
+    <form id="form" class="input-box reveal">
 
-    <div class="projects-card">
-      <img src="project1.png" alt="Desktop Offline-First POS Machine">
-      <div class="projects-card-info">
-        <h3>Offline-First Desktop POS</h3>
-        <p>Resilient point-of-sale system featuring power-safe local storage and automated cloud sync.</p>
+      <input type="hidden" name="access_key" value="005922a2-01d3-41fd-bed1-34317c1bb24c">
+
+      <div class="input-row">
+        <div class="input-wrapper">
+          <i class="fa-solid fa-user" aria-hidden="true"></i>
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+
+        <div class="input-wrapper">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          <input type="email" name="email" placeholder="example@email.com" required>
+        </div>
       </div>
-    </div>
 
-    <div class="projects-card">
-      <img src="project2.png" alt="No. 1 Pharmacy Website">
-      <div class="projects-card-info">
-        <h3>Responsive Web Design</h3>
-        <p>Modern, accessible websites engineered for speed and cross-device fluidity, including <a href="https://no1pharmacy.co.zw/about" target="_blank" rel="noopener">No. 1 Pharmacy</a>.</p>
+      <div class="input-wrapper">
+        <i class="fa-solid fa-tag" aria-hidden="true"></i>
+        <input type="text" name="subject" placeholder="Subject (e.g. Backend Engineering, Consultation)">
       </div>
-    </div>
 
-    <div class="projects-card">
-      <img src="project3.png" alt="Azure Cloud Infrastructure Management">
-      <div class="projects-card-info">
-        <h3>Azure Cloud Management</h3>
-        <p>Multi-environment VM orchestration, NSG firewall hardening, and automated SSL/TLS pipelines.</p>
+      <div class="input-wrapper">
+        <textarea name="message" placeholder="Tell me about your project or inquiry..." required></textarea>
       </div>
-    </div>
 
-  </div>
-</section>
-
-<section class="contact" id="contact">
-  <h2 class="section-title">Contact Me</h2>
-  
-  <form id="form" class="input-box">
-    
-    <input type="hidden" name="access_key" value="005922a2-01d3-41fd-bed1-34317c1bb24c">
-
-    <div class="input-wrapper">
-      <i class="fa-solid fa-envelope"></i>
-      <input type="email" name="email" placeholder="example@email.com" required>
-    </div>
-
-    <div class="input-wrapper">
-      <textarea name="message" placeholder="Message" required></textarea>
-    </div>
-
-    <button type="submit" class="submit-btn">Submit</button>
-  </form>
-</section>
+      <button type="submit" class="submit-btn">Send Message</button>
+      <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+    </form>
+  </section>
+</main>
 
 <footer>
   <ul class="footer-links">
     <li><a href="#home">Home</a></li>
     <li><a href="#experience">Services</a></li>
+    <li><a href="#stack">Stack</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <p class="copyright">&copy; 2026 Tinotenda Nyabereka. All rights reserved.</p>
 </footer>
+
+<button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top">
+  <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+<div id="project-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+  <div class="modal-backdrop" id="modal-backdrop"></div>
+  <div class="modal-content">
+    <button type="button" id="modal-close" class="modal-close" aria-label="Close project details">
+      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+    </button>
+    <img id="modal-image" src="" alt="" class="modal-image">
+    <div class="modal-body">
+      <span id="modal-tag" class="project-tag"></span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+      <div class="modal-section">
+        <h4>Key Engineering Highlights</h4>
+        <ul id="modal-highlights" class="modal-highlights"></ul>
+      </div>
+      <div id="modal-links" class="modal-links"></div>
+    </div>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
