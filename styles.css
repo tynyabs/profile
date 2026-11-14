@@ -590,6 +590,12 @@ section {
   border: 1px solid var(--border-soft);
 }
 
+.projects-card[data-project="azure"] > img {
+  object-fit: contain;
+  background-color: #ffffff;
+  padding: 0.45rem;
+}
+
 .projects-card-info {
   display: flex;
   flex-direction: column;
