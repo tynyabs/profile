@@ -1,0 +1,55 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Global safety net: deny all access unless explicitly permitted below
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isSignedIn()
+        && request.auth.token.email_verified == true
+        && request.auth.token.email == 'tinotendanyabereka@gmail.com';
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function isValidId(id) {
+      return id is string
+        && id.size() >= 1
+        && id.size() <= 128
+        && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function isValidClickEvent(data) {
+      return data.keys().hasAll(['targetId', 'label', 'category', 'createdAt'])
+        && data.keys().hasOnly(['targetId', 'label', 'category', 'createdAt'])
+        && data.targetId is string
+        && data.targetId.size() >= 1
+        && data.targetId.size() <= 64
+        && data.targetId.matches('^[a-zA-Z0-9_\\-]+$')
+        && data.label is string
+        && data.label.size() >= 1
+        && data.label.size() <= 120
+        && data.category is string
+        && data.category in ['hero', 'nav', 'service', 'stack', 'project', 'social', 'contact', 'ui']
+        && data.createdAt is timestamp
+        && data.createdAt == request.time;
+    }
+
+    match /click_events/{eventId} {
+      allow get: if isAdmin() && isValidId(eventId);
+      allow list: if isAdmin();
+      allow create: if isValidId(eventId) && isValidClickEvent(incoming());
+      allow update: if false;
+      allow delete: if isAdmin() && isValidId(eventId);
+    }
+  }
+}

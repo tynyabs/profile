@@ -1,0 +1,43 @@
+{
+  "entities": {
+    "ClickEvent": {
+      "title": "ClickEvent",
+      "description": "Immutable record of a visitor click interaction on a tracked portfolio UI element.",
+      "type": "object",
+      "properties": {
+        "targetId": {
+          "type": "string",
+          "description": "Stable identifier of the clicked UI element.",
+          "minLength": 1,
+          "maxLength": 64,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "label": {
+          "type": "string",
+          "description": "Human-readable name of the clicked UI element.",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "category": {
+          "type": "string",
+          "description": "Portfolio section or category of the clicked element.",
+          "enum": ["hero", "nav", "service", "stack", "project", "social", "contact", "ui"]
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server timestamp when the click occurred."
+        }
+      },
+      "required": ["targetId", "label", "category", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/click_events/{eventId}": {
+      "schema": {
+        "$ref": "#/entities/ClickEvent"
+      },
+      "description": "Append-only click analytics events writable by visitors and readable/deletable exclusively by the authenticated portfolio owner."
+    }
+  }
+}

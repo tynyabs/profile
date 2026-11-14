@@ -21,21 +21,21 @@
 <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
 
 <header class="header" id="header">
-  <a href="#home" class="logo"><span>Tinotenda Nyabereka</span></a>
+  <a href="#home" class="logo" data-track-id="nav-logo" data-track-label="Header Logo" data-track-category="nav"><span>Tinotenda Nyabereka</span></a>
 
   <ul class="nav-links" id="nav-links">
-    <li><a href="#home" data-section="home">Home</a></li>
-    <li><a href="#experience" data-section="experience">Services</a></li>
-    <li><a href="#stack" data-section="stack">Stack</a></li>
-    <li><a href="#projects" data-section="projects">Projects</a></li>
-    <li><a href="#contact" data-section="contact">Contact</a></li>
+    <li><a href="#home" data-section="home" data-track-id="nav-home" data-track-label="Nav: Home" data-track-category="nav">Home</a></li>
+    <li><a href="#experience" data-section="experience" data-track-id="nav-services" data-track-label="Nav: Services" data-track-category="nav">Services</a></li>
+    <li><a href="#stack" data-section="stack" data-track-id="nav-stack" data-track-label="Nav: Stack" data-track-category="nav">Stack</a></li>
+    <li><a href="#projects" data-section="projects" data-track-id="nav-projects" data-track-label="Nav: Projects" data-track-category="nav">Projects</a></li>
+    <li><a href="#contact" data-section="contact" data-track-id="nav-contact" data-track-label="Nav: Contact" data-track-category="nav">Contact</a></li>
   </ul>
 
   <div class="header-actions">
-    <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+    <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode" data-track-id="ui-theme-toggle" data-track-label="Theme Toggle" data-track-category="ui">
       <i class="fa-solid fa-moon" aria-hidden="true"></i>
     </button>
-    <a href="https://github.com/tynyabs" target="_blank" rel="noopener noreferrer" class="visit-btn">Visit GitHub</a>
+    <a href="https://github.com/tynyabs" target="_blank" rel="noopener noreferrer" class="visit-btn" data-track-id="hero-header-github" data-track-label="Visit GitHub (Header)" data-track-category="hero">Visit GitHub</a>
     <i id="menu-icon" class="fa-solid fa-bars" role="button" tabindex="0" aria-label="Toggle menu" aria-expanded="false"></i>
   </div>
 </header>
@@ -73,17 +73,17 @@
         </div>
 
         <div class="btn-group">
-          <a href="assets/Tinotenda_Nyabereka_CV.pdf" download="Tinotenda_Nyabereka_CV.pdf" class="btn btn-primary">
+          <a href="assets/Tinotenda_Nyabereka_CV.pdf" download="Tinotenda_Nyabereka_CV.pdf" class="btn btn-primary" data-track-id="hero-download-cv" data-track-label="Download CV" data-track-category="hero">
             <i class="fa-solid fa-download" aria-hidden="true"></i> Download CV
           </a>
-          <a href="#contact" class="btn">Contact Me</a>
+          <a href="#contact" class="btn" data-track-id="hero-contact-me" data-track-label="Contact Me (Hero)" data-track-category="hero">Contact Me</a>
         </div>
 
         <div class="socials">
-          <a href="https://github.com/tynyabs" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <a href="https://github.com/tynyabs" target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-track-id="social-github" data-track-label="GitHub (Social Icon)" data-track-category="social">
             <i class="fa-brands fa-github"></i>
           </a>
-          <a href="https://www.linkedin.com/in/tinotenda-nyabereka-938569213/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/tinotenda-nyabereka-938569213/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-track-id="social-linkedin" data-track-label="LinkedIn (Social Icon)" data-track-category="social">
             <i class="fa-brands fa-linkedin"></i>
           </a>
         </div>
@@ -97,42 +97,42 @@
     <div class="experience-info">
       <div class="grid">
 
-        <div class="grid-card reveal">
+        <div class="grid-card reveal" data-track-id="service-backend" data-track-label="Service: Backend Engineering" data-track-category="service">
           <i class="fa-solid fa-code"></i>
           <span class="grid-card-title">Backend Engineering</span>
           <h3 class="grid-card-subtitle">5 Years</h3>
           <p>Designing robust microservices, high-performance APIs, and secure financial integrations using modern Spring ecosystems.</p>
         </div>
 
-        <div class="grid-card reveal">
+        <div class="grid-card reveal" data-track-id="service-system-design" data-track-label="Service: System Design" data-track-category="service">
           <i class="fa-solid fa-gears"></i>
           <span class="grid-card-title">System Design</span>
           <h3 class="grid-card-subtitle">Architecture</h3>
           <p>Structuring scalable distributed systems, localized data persistence layers, and fault-tolerant transaction processing workflows.</p>
         </div>
 
-        <div class="grid-card reveal">
+        <div class="grid-card reveal" data-track-id="service-devops" data-track-label="Service: DevOps" data-track-category="service">
           <i class="fa-brands fa-jenkins"></i>
           <span class="grid-card-title">DevOps</span>
           <h3 class="grid-card-subtitle">Cloud &amp; Containers</h3>
           <p>Automating infrastructure deployments, managing cloud environments on Microsoft Azure, and configuring secure server hardening.</p>
         </div>
 
-        <div class="grid-card reveal">
+        <div class="grid-card reveal" data-track-id="service-frontend" data-track-label="Service: Frontend" data-track-category="service">
           <i class="fa-brands fa-css3-alt"></i>
           <span class="grid-card-title">Frontend</span>
           <h3 class="grid-card-subtitle">UI Development</h3>
           <p>Building responsive, modern web interfaces, interactive components, and clean client-side layout structures.</p>
         </div>
 
-        <div class="grid-card reveal">
+        <div class="grid-card reveal" data-track-id="service-desktop" data-track-label="Service: Desktop Applications" data-track-category="service">
           <i class="fa-solid fa-desktop"></i>
           <span class="grid-card-title">Desktop Applications</span>
           <h3 class="grid-card-subtitle">JavaFX</h3>
           <p>Building reliable desktop applications such as point-of-sale systems with responsive UIs and resilient local storage.</p>
         </div>
 
-        <div class="grid-card reveal">
+        <div class="grid-card reveal" data-track-id="service-qa" data-track-label="Service: QA & Testing" data-track-category="service">
           <i class="fa-solid fa-bug"></i>
           <span class="grid-card-title">QA &amp; Testing</span>
           <h3 class="grid-card-subtitle">Quality Assurance</h3>
@@ -147,7 +147,7 @@
     <h2 class="section-title reveal">Tech Stack</h2>
     <div class="stack-grid">
 
-      <div class="stack-card reveal">
+      <div class="stack-card reveal" data-track-id="stack-backend" data-track-label="Stack: Backend & APIs" data-track-category="stack">
         <div class="stack-card-header">
           <i class="fa-solid fa-server"></i>
           <h3>Backend &amp; APIs</h3>
@@ -162,7 +162,7 @@
         </ul>
       </div>
 
-      <div class="stack-card reveal">
+      <div class="stack-card reveal" data-track-id="stack-desktop" data-track-label="Stack: Desktop & Data" data-track-category="stack">
         <div class="stack-card-header">
           <i class="fa-solid fa-database"></i>
           <h3>Desktop &amp; Data</h3>
@@ -177,7 +177,7 @@
         </ul>
       </div>
 
-      <div class="stack-card reveal">
+      <div class="stack-card reveal" data-track-id="stack-cloud" data-track-label="Stack: Cloud & DevOps" data-track-category="stack">
         <div class="stack-card-header">
           <i class="fa-solid fa-cloud"></i>
           <h3>Cloud &amp; DevOps</h3>
@@ -185,14 +185,15 @@
         <ul class="stack-list">
           <li>Microsoft Azure</li>
           <li>Docker &amp; Containers</li>
-          <li>Linux Hardening</li>
-          <li>NSG &amp; Firewall Rules</li>
+          <li>Linux</li>
+          <li>Kubernetes</li>
+          <li>Security</li>
           <li>Nginx &amp; SSL/TLS</li>
           <li>Jenkins / CI-CD</li>
         </ul>
       </div>
 
-      <div class="stack-card reveal">
+      <div class="stack-card reveal" data-track-id="stack-frontend" data-track-label="Stack: Frontend & QA" data-track-category="stack">
         <div class="stack-card-header">
           <i class="fa-solid fa-laptop-code"></i>
           <h3>Frontend &amp; QA</h3>
@@ -215,7 +216,7 @@
 
     <div class="projects-grid">
 
-      <article class="projects-card reveal" data-project="pos">
+      <article class="projects-card reveal" data-project="pos" data-track-id="project-pos" data-track-label="Project: Offline-First Desktop POS" data-track-category="project">
         <img src="project1.png" alt="Desktop Offline-First POS Machine">
         <div class="projects-card-info">
           <span class="project-tag">JavaFX · SQLite · Cloud Sync</span>
@@ -229,14 +230,14 @@
         </div>
       </article>
 
-      <article class="projects-card reveal" data-project="pharmacy">
+      <article class="projects-card reveal" data-project="pharmacy" data-track-id="project-pharmacy" data-track-label="Project: No. 1 Pharmacy Card" data-track-category="project">
         <img src="project2.png" alt="No. 1 Pharmacy Website">
         <div class="projects-card-info">
           <span class="project-tag">HTML5 · CSS3 · Responsive UI</span>
           <h3>Responsive Web Design</h3>
-          <p>Modern, accessible websites engineered for speed and cross-device fluidity, including <a href="https://no1pharmacy.co.zw/about" target="_blank" rel="noopener noreferrer" class="inline-project-link">No. 1 Pharmacy</a>.</p>
+          <p>Modern, accessible websites engineered for speed and cross-device fluidity, including <a href="https://no1pharmacy.co.zw/about" target="_blank" rel="noopener noreferrer" class="inline-project-link" data-track-id="project-pharmacy-inline" data-track-label="No. 1 Pharmacy (Inline Link)" data-track-category="project">No. 1 Pharmacy</a>.</p>
           <div class="project-actions">
-            <a href="https://no1pharmacy.co.zw/about" target="_blank" rel="noopener noreferrer" class="project-ext-link">
+            <a href="https://no1pharmacy.co.zw/about" target="_blank" rel="noopener noreferrer" class="project-ext-link" data-track-id="project-pharmacy-live" data-track-label="No. 1 Pharmacy (Live Site)" data-track-category="project">
               Visit Live Site <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
             </a>
             <button type="button" class="project-detail-btn" data-project="pharmacy">
@@ -246,7 +247,7 @@
         </div>
       </article>
 
-      <article class="projects-card reveal" data-project="azure">
+      <article class="projects-card reveal" data-project="azure" data-track-id="project-azure" data-track-label="Project: Azure Cloud Management" data-track-category="project">
         <img src="project3.png" alt="Azure Cloud Infrastructure Management">
         <div class="projects-card-info">
           <span class="project-tag">Microsoft Azure · NSG · TLS</span>
@@ -291,7 +292,7 @@
         <textarea name="message" placeholder="Tell me about your project or inquiry..." required></textarea>
       </div>
 
-      <button type="submit" class="submit-btn">Send Message</button>
+      <button type="submit" class="submit-btn" data-track-id="contact-submit" data-track-label="Contact Form Submit" data-track-category="contact">Send Message</button>
       <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
     </form>
   </section>
@@ -299,16 +300,16 @@
 
 <footer>
   <ul class="footer-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#experience">Services</a></li>
-    <li><a href="#stack">Stack</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#home" data-track-id="footer-home" data-track-label="Footer: Home" data-track-category="nav">Home</a></li>
+    <li><a href="#experience" data-track-id="footer-services" data-track-label="Footer: Services" data-track-category="nav">Services</a></li>
+    <li><a href="#stack" data-track-id="footer-stack" data-track-label="Footer: Stack" data-track-category="nav">Stack</a></li>
+    <li><a href="#projects" data-track-id="footer-projects" data-track-label="Footer: Projects" data-track-category="nav">Projects</a></li>
+    <li><a href="#contact" data-track-id="footer-contact" data-track-label="Footer: Contact" data-track-category="nav">Contact</a></li>
   </ul>
-  <p class="copyright">&copy; 2026 Tinotenda Nyabereka. All rights reserved.</p>
+  <p class="copyright" id="copyright-trigger">&copy; 2026 Tinotenda Nyabereka. All rights reserved.</p>
 </footer>
 
-<button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top">
+<button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top" data-track-id="ui-back-to-top" data-track-label="Back to Top" data-track-category="ui">
   <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
 </button>
 
@@ -332,6 +333,72 @@
   </div>
 </div>
 
-<script src="script.js"></script>
+<!-- Private Owner-Only Analytics Modal (Hidden from regular visitors) -->
+<div id="analytics-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="analytics-modal-title" hidden>
+  <div class="modal-backdrop" id="analytics-backdrop"></div>
+  <div class="modal-content analytics-modal-content">
+    <button type="button" id="analytics-close" class="modal-close" aria-label="Close analytics">
+      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+    </button>
+    <div class="analytics-header">
+      <div>
+        <span class="project-tag">Owner Private View</span>
+        <h3 id="analytics-modal-title">Click Analytics</h3>
+      </div>
+      <div id="analytics-auth-controls" class="analytics-auth-controls"></div>
+    </div>
+
+    <div id="analytics-gate" class="analytics-gate">
+      <p id="analytics-gate-message">Sign in with your owner Google account to view visitor click counts across portfolio objects.</p>
+      <button type="button" id="analytics-signin-btn" class="btn btn-primary">
+        <i class="fa-brands fa-google" aria-hidden="true"></i> Sign in with Google
+      </button>
+      <p id="analytics-auth-error" class="analytics-error" hidden></p>
+    </div>
+
+    <div id="analytics-dashboard" class="analytics-dashboard" hidden>
+      <div class="analytics-toolbar">
+        <label class="analytics-switch">
+          <input type="checkbox" id="toggle-onpage-badges">
+          <span>Show click counts on page objects</span>
+        </label>
+        <label class="analytics-switch">
+          <input type="checkbox" id="toggle-ignore-owner" checked>
+          <span>Ignore my own clicks</span>
+        </label>
+        <button type="button" id="analytics-reset-btn" class="analytics-danger-btn">
+          <i class="fa-solid fa-trash-can" aria-hidden="true"></i> Clear Data
+        </button>
+      </div>
+
+      <div class="analytics-summary" id="analytics-summary"></div>
+
+      <div class="analytics-filters" id="analytics-filters">
+        <button type="button" class="filter-btn active" data-category="all">All</button>
+        <button type="button" class="filter-btn" data-category="hero">Hero</button>
+        <button type="button" class="filter-btn" data-category="project">Projects</button>
+        <button type="button" class="filter-btn" data-category="service">Services</button>
+        <button type="button" class="filter-btn" data-category="stack">Stack</button>
+        <button type="button" class="filter-btn" data-category="social">Social</button>
+        <button type="button" class="filter-btn" data-category="nav">Nav</button>
+        <button type="button" class="filter-btn" data-category="contact">Contact</button>
+        <button type="button" class="filter-btn" data-category="ui">UI</button>
+      </div>
+
+      <div class="analytics-columns">
+        <div class="analytics-panel">
+          <h4>Clicks by Object</h4>
+          <div id="analytics-objects-list" class="analytics-objects-list"></div>
+        </div>
+        <div class="analytics-panel">
+          <h4>Recent Clicks</h4>
+          <ul id="analytics-recent-list" class="analytics-recent-list"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="script.js"></script>
 </body>
 </html>
