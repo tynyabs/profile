@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tinotenda Nyabereka | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#home" class="logo"><span>Tinotenda Nyabereka</span></a>
+
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#experience">Services</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <i id="menu-icon" class="fa-solid fa-bars" role="button" aria-label="Toggle menu" aria-expanded="false"></i>
+
+  <a href="https://github.com/tynyabs" target="_blank" rel="noopener noreferrer" class="visit-btn">Visit GitHub</a>
+</header>
+
+<section class="about" id="home">
+  <div class="about-container">
+    <img src="tinotenda.jpg" alt="Portrait of Tinotenda Nyabereka">
+    <div class="info-box">
+
+      <div class="text">
+        <h3>Hi, I'm</h3>
+        <h1>Tinotenda Nyabereka</h1>
+        <span class="role-title">Software Engineer</span>
+        <p class="hero-desc">Building resilient Java backend systems, offline-first applications, and scalable cloud infrastructure.</p>
+      </div>
+
+      <div class="btn-group">
+        <a href="assets/Tinotenda_Nyabereka_CV.pdf" download="Tinotenda_Nyabereka_CV.pdf" class="btn">Download CV</a>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+
+      <div class="socials">
+        <a href="https://github.com/tynyabs" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/tinotenda-nyabereka-938569213/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="experience" id="experience">
+  <h2 class="section-title">Services</h2>
+  <div class="experience-info">
+    <div class="grid">
+
+      <div class="grid-card">
+        <i class="fa-solid fa-code"></i>
+        <span class="grid-card-title">Backend Engineering</span>
+        <h3 class="grid-card-subtitle">5 Years</h3>
+        <p>Designing robust microservices, high-performance APIs, and secure financial integrations using modern Spring ecosystems.</p>
+      </div>
+
+      <div class="grid-card">
+        <i class="fa-solid fa-gears"></i>
+        <span class="grid-card-title">System Design</span>
+        <h3 class="grid-card-subtitle">Architecture</h3>
+        <p>Structuring scalable distributed systems, localized data persistence layers, and fault-tolerant transaction processing workflows.</p>
+      </div>
+
+      <div class="grid-card">
+        <i class="fa-brands fa-jenkins"></i>
+        <span class="grid-card-title">DevOps</span>
+        <h3 class="grid-card-subtitle">Cloud &amp; Containers</h3>
+        <p>Automating infrastructure deployments, managing cloud environments on Microsoft Azure, and configuring secure server hardening.</p>
+      </div>
+
+      <div class="grid-card">
+        <i class="fa-brands fa-css3-alt"></i>
+        <span class="grid-card-title">Frontend</span>
+        <h3 class="grid-card-subtitle">UI Development</h3>
+        <p>Building responsive, modern web interfaces, interactive components, and clean client-side layout structures.</p>
+      </div>
+
+      <div class="grid-card">
+        <i class="fa-solid fa-desktop"></i>
+        <span class="grid-card-title">Desktop Applications</span>
+        <h3 class="grid-card-subtitle">JavaFX</h3>
+        <p>Building reliable desktop applications such as point-of-sale systems with responsive UIs and resilient local storage.</p>
+      </div>
+
+      <div class="grid-card">
+        <i class="fa-solid fa-bug"></i>
+        <span class="grid-card-title">QA &amp; Testing</span>
+        <h3 class="grid-card-subtitle">Quality Assurance</h3>
+        <p>Testing payment and fiscal workflows end to end so releases ship correct, compliant, and stable.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <h2 class="section-title">Recent Projects</h2>
+
+  <div class="projects-grid">
+
+    <div class="projects-card">
+      <img src="project1.png" alt="Desktop Offline-First POS Machine">
+      <div class="projects-card-info">
+        <h3>Offline-First Desktop POS</h3>
+        <p>Resilient point-of-sale system featuring power-safe local storage and automated cloud sync.</p>
+      </div>
+    </div>
+
+    <div class="projects-card">
+      <img src="project2.png" alt="No. 1 Pharmacy Website">
+      <div class="projects-card-info">
+        <h3>Responsive Web Design</h3>
+        <p>Modern, accessible websites engineered for speed and cross-device fluidity, including <a href="https://no1pharmacy.co.zw/about" target="_blank" rel="noopener">No. 1 Pharmacy</a>.</p>
+      </div>
+    </div>
+
+    <div class="projects-card">
+      <img src="project3.png" alt="Azure Cloud Infrastructure Management">
+      <div class="projects-card-info">
+        <h3>Azure Cloud Management</h3>
+        <p>Multi-environment VM orchestration, NSG firewall hardening, and automated SSL/TLS pipelines.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="section-title">Contact Me</h2>
+  
+  <form id="form" class="input-box">
+    
+    <input type="hidden" name="access_key" value="005922a2-01d3-41fd-bed1-34317c1bb24c">
+
+    <div class="input-wrapper">
+      <i class="fa-solid fa-envelope"></i>
+      <input type="email" name="email" placeholder="example@email.com" required>
+    </div>
+
+    <div class="input-wrapper">
+      <textarea name="message" placeholder="Message" required></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+</section>
+
+<footer>
+  <ul class="footer-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#experience">Services</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <p class="copyright">&copy; 2026 Tinotenda Nyabereka. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
